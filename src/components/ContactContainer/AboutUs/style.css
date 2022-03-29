@@ -1,0 +1,34 @@
+.aboutUs{
+       position: relative;
+}
+.background{
+       background-image: url("https://static.wixstatic.com/media/82fcd3_96376843bac9407bb5b50891b78b6210~mv2.jpg/v1/fill/w_1349,h_679,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/82fcd3_96376843bac9407bb5b50891b78b6210~mv2.jpg");
+       position: relative;
+       background-attachment: fixed;
+       width: 100%;
+       background-color: rgb(216,232,242);
+       height: 697px;
+}
+.aboutUs .about-us{
+       position: absolute;
+       text-align: center;
+       top: 150px;
+       left: calc(50% - 322.5px);
+}
+.about-us .title{
+       color: #2B4355;
+       font-size: 36px;
+       letter-spacing: 0.05em;
+}
+.about-us .text{
+       font-family: "Avenir LT 35 Light";
+       letter-spacing: 0.05em;
+       width: 645px;
+       line-height: 1.6em;
+       font-size: 16px;
+       margin-bottom: 40px;
+       margin-top: 50px;
+}
+.about-us .more{
+       width: 181px;
+}

@@ -1,0 +1,72 @@
+.testimonials{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       background: #F7F7F7;
+       padding: 100px 0;
+}
+.testimonials .title{
+       letter-spacing: 0.05em;
+       line-height: 1.2em;
+       font-size: 36px;
+       color: #072136;
+}
+.slick-slider{
+       width: 980px;
+}
+.slider-wrapper{
+       display: flex !important;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+}
+.slider-wrapper .text-1{
+       margin-top: 100px;
+       width: 465px;
+       color: #072136;
+       font-size: 20px;
+       letter-spacing: 0.8px;
+       font-family: "avenir-lt-w01_35-light1475496";
+}
+.slider-wrapper .text-2{
+       color: #012b4c;
+       margin-top: 30px;
+       font-weight: 700;
+       letter-spacing: 1px;
+       font-size: 16px;
+       font-family: "avenir-lt-w01_35-light1475496";
+}
+.slider-wrapper .text-3{
+       font-family: "avenir-lt-w01_35-light1475496";
+       letter-spacing: 1px;
+       padding-bottom: 100px;
+}
+.slick-arrow{
+       z-index: 1;
+}
+.slick-prev:before{
+       content: "<";
+       color: gray;
+}
+.slick-next:before{
+       content: ">";
+       color: gray;
+}
+.slick-next{
+       z-index: 1;
+}
+.slick-dots li button:before{
+       font-size: 8px;
+       opacity: unset;
+}
+.slick-dots li.slick-active button:before{
+       border: 2px solid black;
+       font-size: 0px;
+       border-radius: 50%;
+       margin-top: 3px;
+       margin-left: 2px;
+       width: 9px;
+       height: 9px;
+       opacity: unset;
+}

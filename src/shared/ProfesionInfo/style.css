@@ -1,0 +1,37 @@
+.profesionInfo{
+       display: flex;
+       border: 1px solid #CCCCCC;
+       width: 940px;
+       margin: 80px 0;
+}
+.profesionInfo .profesion-button{
+       padding: 50px;
+}
+.profesionInfo .profesion{
+       line-height: 1.33em;
+       font-size: 26px;
+       color: #072136;
+       opacity: 0.8;
+}
+.profesionInfo .profesion:hover{
+       opacity: 0.6;
+       cursor: pointer;
+}
+.profesionInfo .hr{
+       color: #5f5f5f;
+       margin: 15px 0;
+}
+.profesionInfo .money{
+       color: #5f5f5f;
+       margin: 0 0 30px 0;
+}
+.profesionInfo .book-now{
+       width: 134px;
+       height: 40px;
+       padding: 10px 22px;
+}
+.profesionInfo .book-now:hover{
+       background: unset;
+       opacity: 0.7;
+       color: #0C3B5F;
+}

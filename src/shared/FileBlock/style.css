@@ -1,0 +1,88 @@
+.fileBlock-wrapper{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       padding-bottom: 200px;
+}
+.fileBlock{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       width: 940px;
+       padding: 40px 0;
+       border-bottom: 1px solid #C8C8C8;
+}
+.fileBlock:hover{
+       background: #FAFAFA;
+       padding: 40px 20px;
+       border-top: 1px solid #C8C8C8;
+       border-bottom: 1px solid #C8C8C8;
+       margin-top: -1px;
+}
+.fileBlock .icon-textes{
+       display: flex;
+       align-items: center;
+       max-width: 500px;
+}
+.fileBlock .icon-date{
+       display: flex;
+       align-items: center;
+}
+.fileBlock .icon-date .date{
+       font-family: "avenir-lt-w01_85-heavy1475544";
+       margin-right: 35px;
+       font-size: 16px;
+}
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root{
+       font-family: "avenir-lt-w01_85-heavy1475544" !important;
+       font-size: 16px !important;
+}
+.fileBlock .icon-date .menu-folder{
+       cursor: pointer;
+       opacity: 0.5;
+}
+.fileBlock .icon-date .menu-folder:hover{
+       opacity: 0.2;
+}
+.fileBlock .title{
+       font-family: "avenir-lt-w01_85-heavy1475544";
+       font-size: 14px;
+       color: black;
+       margin: 0;
+}
+.fileBlock .text{
+       font-family: "avenir-lt-w01_85-heavy1475544";
+       font-size: 16px;
+       color: gray;
+       margin: 0;
+       text-align: start;
+}
+.fileBlock .folder{
+       width: 40px;
+       height: 44px;
+       margin-right: 13px;
+}
+.fileBlock .checkbox-none{
+       position: relative;
+       margin-right: 15px;
+       color: #646464 !important;
+       padding: 0;
+       transition: none;
+}
+.fileBlock .icon-textes .Mui-checked{
+       color: #646464;
+}
+.fileBlock .icon-textes .css-i4bv87-MuiSvgIcon-root{
+       font-size: 19px;
+}
+.fileBlock .background-none{
+       position: absolute;
+       display: block;
+       background: white;
+       width: 30px;
+       height: 30px;
+}
+.fileBlock:hover .background-none{
+       display: none;
+}

@@ -1,0 +1,25 @@
+.person{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       padding: 70px 60px;
+       width: 488px;
+       border: 1px solid #C7C7C7;
+}
+.person .name{
+       margin-top: 40px;
+       margin-bottom: 8px;
+       letter-spacing: 0.03em;
+       font-size: 26px;
+}
+.person .profesion{
+       font-size: 18px;
+       font-weight: 600;
+       color: #072136;
+       margin-bottom: 30px;
+}
+.person .text{
+       width: 342px;
+       line-height: 1.8em;
+       font-size: 16px;
+}

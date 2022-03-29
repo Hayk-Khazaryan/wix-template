@@ -1,0 +1,45 @@
+.achievingGrowth{
+       /* object-fit: cover;
+       object-position: 50% 50%; */
+       margin-bottom: 60px;
+}
+.achievingGrowth .img{
+       width: 100%;
+       position: relative;
+       /* --bg-overlay-color: rgb(var(--color_16));
+       --bg-gradient: none;
+       --fill-layer-image-opacity: 1;
+       --fill-layer-background-media-position: absolute;
+       --fill-layer-background-media-pointer-events: none; */
+}
+.developing-strategies{
+       position: absolute;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       width: 825px;
+       height: 250px;
+       background: white;
+       top: 500px;
+       left: calc(50% - 412.5px);
+}
+.developing-strategies .text{
+       font-size: 26px;
+       color: #000000;
+       margin-top: 30px;
+       font-family: 'Brandon Grotesque Medium', sans-serif;
+}
+.developing-strategies .title{
+       font-size: 60px;
+       font-weight: 700;
+       font-family: 'Acari Sans', sans-serif;
+       margin-top: 20px;
+       letter-spacing: 0.03em;
+       font-weight: 500;
+       color: #072136;
+}
+.book{
+       margin-top: 20px;
+       font-weight: 600;
+}

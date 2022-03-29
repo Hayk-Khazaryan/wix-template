@@ -1,0 +1,57 @@
+.footer{
+       display: flex;
+       justify-content: space-between;
+       background: #072136;
+       padding: 50px 80px 100px 80px;
+}
+.footer p{
+       color: #fff;
+       font-family: "avenir-lt-w01_35-light1475496";
+}
+.footer .first-chiled{
+       display: flex;
+       flex-direction: column;
+       width: 255px;
+}
+.footer .title{
+       margin-bottom: 20px;
+       letter-spacing: 0.05em;
+       font-family: "avenir-lt-w01_35-light1475496";
+       font-size: 20px;
+       text-decoration: none;
+       color: #fff;
+}
+.footer .text{
+       text-decoration: none;
+       color: #fff;
+       font-size: 16px;
+       line-height: 25px;
+}
+.footer .secound-chiled .text:hover{
+       color: #8CBCDB;
+}
+.footer .secound-chiled{
+       display: flex;
+       flex-direction: column;
+       width: 285px;
+       margin-top: 10px;
+       margin-left: 250px;
+}
+.footer .secound-chiled .text{
+       line-height: 35px;
+}
+.footer .thrth-chiled{
+       width: 285px;
+       margin-top: 10px;
+}
+.footer .MuiSvgIcon-root{
+       color: #fff;
+       width: 25px;
+       height: 25px;
+       margin-right: 10px;
+       margin-bottom: 50px;
+}
+.wix{
+       color: #fff;
+       margin-left: 4px;
+}

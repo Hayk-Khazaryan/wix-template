@@ -1,0 +1,69 @@
+.ContactForm{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       flex-wrap: wrap;
+       background: #0C3C60;
+       padding: 100px 0;
+}
+.form{
+       width: 980px;
+}
+.ContactForm .MuiFormControl-root{
+       margin: 30px 0 0 30px;
+}
+.ContactForm .MuiFilledInput-input{
+       width: 421px;
+       font-size: 22px;
+}
+.css-cio0x1-MuiInputBase-root-MuiFilledInput-root{
+       color: white !important;
+       background: #0C3C60 !important;
+}
+.css-cio0x1-MuiInputBase-root-MuiFilledInput-root:after{
+       border-bottom: 2px solid white !important;
+       transition: none !important;
+}
+.css-cio0x1-MuiInputBase-root-MuiFilledInput-root:before {
+       border-bottom: 1px solid white !important;
+}
+.ContactForm .MuiInputLabel-root{
+       display: flex;
+       letter-spacing: 0.82px;
+       transform: none;
+       color: white !important;
+       font-size: 18px;
+}
+.text-filed{
+       width: 698px !important;    
+       margin-top: 60px !important;
+}
+.ContactForm .text-filed .MuiFilledInput-input{
+       padding-bottom: 50px;
+}
+.ContactForm .title{
+       letter-spacing: 0.05em;
+       line-height: 1.2em;
+       font-size: 36px;
+       color: white;
+       padding: 0 0 50px 0;
+}
+.contact-submit{
+       background: #FFFFFF;
+       color: #0C3C60;
+       font-weight: 600;
+       width: 187px;
+       margin-left: 30px;
+       padding: 17px 30px;
+}
+.ContactForm .input-submit{
+       display: flex;
+       align-items: flex-end;
+}
+.ContactForm .text-filed .MuiInputLabel-asterisk{
+       display: block;
+}
+.ContactForm .MuiInputLabel-asterisk{
+       display: none;
+}

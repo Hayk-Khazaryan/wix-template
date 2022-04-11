@@ -1,25 +1,95 @@
-.person{
+.person {
        display: flex;
        flex-direction: column;
        justify-content: center;
-       padding: 70px 60px;
-       width: 488px;
+       padding: 60px;
+       width: 408px;
        border: 1px solid #C7C7C7;
+       margin: -1px 0 0 -1px;
+       position: relative;
 }
-.person .name{
-       margin-top: 40px;
-       margin-bottom: 8px;
+
+.person .img {
+       opacity: 0;
+}
+
+.person .scroll-img {
+       opacity: unset;
+       transition: opacity 2.5s ease;
+       animation-name: person-animation-img;
+       animation-duration: 2.5s;
+}
+
+.person .name {
        letter-spacing: 0.03em;
        font-size: 26px;
+       opacity: 0;
+       margin: 40px 0 8px 0;
 }
-.person .profesion{
+
+.person .scroll-name {
+       opacity: unset;
+       transition: opacity 2.5s ease;
+       animation-name: person-animation-name;
+       animation-duration: 2.5s;
+}
+
+.person .profession {
        font-size: 18px;
        font-weight: 600;
        color: #072136;
-       margin-bottom: 30px;
+       opacity: 0;
 }
-.person .text{
+
+.person .scroll-profession {
+       opacity: unset;
+       transition: opacity 2.5s ease;
+       animation-name: person-animation-img;
+       animation-duration: 2.5s;
+}
+
+.person .text {
+       margin-top: 10px;
        width: 342px;
        line-height: 1.8em;
+       opacity: 0;
        font-size: 16px;
+}
+
+.person .scroll-text {
+       opacity: unset;
+       transition: opacity 2.5s ease;
+       animation-name: person-animation-text;
+       animation-duration: 2.5s;
+}
+
+@keyframes person-animation-img {
+       0% {
+              margin-top: 20px;
+       }
+
+       100% {
+              margin-top: 0;
+       }
+}
+
+@keyframes person-animation-name {
+       0% {
+              margin-top: 50px;
+       }
+
+       100% {
+              margin-top: 40px;
+              margin-bottom: 8px;
+       }
+}
+
+@keyframes person-animation-text {
+       0% {
+              margin-top: 20px;
+       }
+
+       100% {
+              margin-top: 10px;
+       }
 }

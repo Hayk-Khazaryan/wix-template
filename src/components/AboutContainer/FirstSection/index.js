@@ -1,11 +1,40 @@
 import "./style.css";
+import { useState, useEffect } from "react"
+
 
 function AboutWrapper() {
+  const [scrollTitle, setScrollTitle] = useState("")
+  const [scrollImg, setScrollImg] = useState("")
+  const [scrollBoth, setScrollBoth] = useState("")
+  const [scrollPosition, setScrollPosition] = useState(0)
+  const handleScroll = () => {
+    const position = window.pageYOffset
+    setScrollPosition(position)
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    };
+  }, [])
+
+  useEffect(() => {
+    if (scrollPosition >= 0) {
+      setScrollTitle("scroll-title")
+      setScrollImg("scroll-img")
+    }
+    if (scrollPosition >= 250) {
+      setScrollBoth("scroll-both")
+    }
+  }, [scrollPosition])
+
+
   return (
     <div className="aboutWrapper">
-      <p className="title">ABOUT</p>
-      <div className="text-img">
-        <div className="text-both">
+      <p className={`${scrollTitle} title`}>ABOUT</p>
+      <div className={`${scrollImg} text-img`}>
+        <div className={`${scrollBoth} text-both`}>
           <p className="text">
             I'm a paragraph. Click here to add your own text and edit me. It’s
             easy. Just click “Edit Text” or double click me to add your own

@@ -5,7 +5,7 @@
        flex-direction: column;
 }
 .toolsTipsWrapper .title{
-       margin-top: 100px;
+       margin-top: 168px;
        font-size: 60px;
        color: #072136;
 }
@@ -24,7 +24,7 @@
 .toolsTipsWrapper .files{
        line-height: 1.4em;
        font-size: 16px;
-       font-family: "avenir-lt-w01_35-light1475496";
+       font-family: 'Avenir Next Cyr', sans-serif;
 }
 .toolsTipsWrapper .file-plus .MuiSvgIcon-root{
        width: 18px;
@@ -47,7 +47,7 @@
        align-items: center;
 }
 .toolsTipsWrapper .file-button{
-       font-family: "avenir-lt-w01_85-heavy1475544";
+       font-family: 'Avenir Next Cyr', sans-serif;
        font-size: 16px;
        min-width: 132px;
        line-height: 24px;
@@ -82,7 +82,7 @@
        height: 18px;
 }
 .toolsTipsWrapper .search-afther{
-       font-family: "avenir-lt-w01_85-heavy1475544";
+       font-family: 'Avenir Next Cyr', sans-serif;
        border: none;
        cursor: pointer;
        color: #0C3C60;
@@ -112,7 +112,7 @@
        align-items: center;
 }
 .toolsTipsWrapper .files-update .name{
-       font-family: "avenir-lt-w01_85-heavy1475544";
+       font-family: 'Avenir Next Cyr', sans-serif;
        font-size: 16px;
        margin-left: 10px;
 }

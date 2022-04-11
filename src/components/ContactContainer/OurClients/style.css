@@ -1,21 +1,61 @@
-.ourClients{
+.ourClients {
        display: flex;
        justify-content: center;
        flex-direction: column;
        align-items: center;
        padding: 80px 60px;
 }
-.ourClients .title{
+
+.ourClients .title {
        letter-spacing: 0.05em;
        line-height: 1.2em;
        font-size: 36px;
        color: #072136;
-       margin-bottom: 40px;
+       margin-top: 50px;
+       margin-bottom: 70px;
+       opacity: 0;
 }
-.ourClients .MuiSvgIcon-root{
+
+.ourClients .scroll-title {
+       opacity: unset;
+       transition: opacity 2.5s ease;
+       animation-name: ourClients-title;
+       animation-duration: 2s;
+}
+
+.ourClients .MuiSvgIcon-root {
        border: 1px solid #C7C7C7;
-       padding: 60px 100px;
+       padding: 70px 100px;
        width: 100px;
        height: 70px;
        color: #757575;
+       margin-left: -1px;
+       opacity: 0;
+}
+
+.ourClients .scroll-icon {
+       opacity: unset;
+       transition: opacity 2.5s ease;
+       animation-name: ourClients-icon;
+       animation-duration: 2s;
+}
+
+@keyframes ourClients-title {
+       0% {
+              margin-top: 70px;
+       }
+
+       100% {
+              margin-top: 50px;
+       }
+}
+
+@keyframes ourClients-icon {
+       0% {
+              margin-top: 20px;
+       }
+
+       100% {
+              margin-top: 0px;
+       }
 }

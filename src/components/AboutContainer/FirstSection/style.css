@@ -1,26 +1,49 @@
-.aboutWrapper{
+.aboutWrapper {
        display: flex;
        flex-direction: column;
        justify-content: center;
        align-items: center;
+       margin-bottom: 100px;
 }
-.aboutWrapper .title{
+
+.aboutWrapper .title {
        letter-spacing: 0.03em;
        font-size: 60px;
+       margin-top: 168px;
        padding-bottom: 100px;
        color: #072136;
-       margin-top: 100px;
+       opacity: 0;
 }
-.aboutWrapper .text-img{
+
+.aboutWrapper .scroll-title {
+       opacity: unset;
+       transition: opacity 3.5s ease;
+}
+
+.aboutWrapper .text-img {
        display: flex;
        border: 1px solid #C7C7C7;
+       opacity: 0;
+       margin-top: 0;
 }
-.aboutWrapper .text-both .text{
-       max-width: 386px;
+
+.aboutWrapper .scroll-img {
+       opacity: unset;
+       transition: opacity 3.5s ease;
+}
+
+.aboutWrapper .text-both .text {
+       max-width: 407px;
        margin-top: 100px;
        margin-bottom: -50px;
-       padding: 0 100px 0 8px;
+       padding: 0 100px 0 15px;
        line-height: 1.8em;
        font-size: 16px;
-       font-family: "avenir-lt-w01_35-light1475496";
+       font-family: 'Avenir Next Cyr';
+}
+
+.aboutWrapper .scroll-both {
+       opacity: unset;
+       transition: margin-top 3.5s ease;
+       transition: opacity 8.5s ease;
 }

@@ -1,24 +1,42 @@
-.ourTeam{
+.ourTeam {
        display: flex;
        flex-direction: column;
        justify-content: center;
        align-items: center;
-       margin-top: 150px;
        margin-bottom: 50px;
 }
-.ourTeam .title{
+
+.ourTeam .title {
        line-height: 1.2em;
        font-size: 36px;
        letter-spacing: 0.05em;
        margin-bottom: 20px;
        color: #072136;
+       opacity: 0;
 }
-.ourTeam .heading{
+
+.ourTeam .heading {
        line-height: 1.6em;
        font-size: 16px;
+       opacity: 0;
 }
-.wrap{
+
+.ourTeam .scroll-title {
+       opacity: unset;
+       transition: opacity 3.5s ease;
+}
+
+.wrap {
        margin-top: 100px;
        justify-content: center;
        flex-wrap: wrap;
+}
+
+.ourTeam .person {
+       opacity: 0;
+}
+
+.ourTeam .scroll-person .person{
+       opacity: unset;
+       transition: opacity 2.5s ease;
 }

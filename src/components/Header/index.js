@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import "./style.css";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import NavigationItems from "../../config";
+import { Link } from "react-router-dom"
+import "./style.css"
+import AccountCircleIcon from "@mui/icons-material/AccountCircle"
+import NavigationItems from "../../config"
 
 function Header() {
   return (

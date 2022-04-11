@@ -1,32 +1,53 @@
-import ProfesionInfo from "../../shared/ProfesionInfo";
-import "./style.css";
+import ProfesionInfo from "../../shared/ProfesionInfo"
+import "./style.css"
+import { useState, useEffect } from "react"
+import data from "./data"
+
 
 function ServicesWrapper() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, [])
+  const [scroll, setScroll] = useState("")
+  const [scrollPosition, setScrollPosition] = useState(0)
+  const handleScroll = () => {
+    const position = window.pageYOffset
+    setScrollPosition(position)
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, [])
+
+  useEffect(() => {
+    if (scrollPosition >= 0) {
+      setScroll("scroll")
+    }
+  }, [scrollPosition])
+
   return (
-    <div className="servicesWrapper">
+    <div className={`${scroll} servicesWrapper`}>
       <p className="title">SERVICES</p>
       <div className="profesionInfo-column">
-        <ProfesionInfo
-          money="220"
-          hr="1 hr"
-          profesion="PROJECT MANAGEMENT"
-          img="https://static.wixstatic.com/media/82fcd3_0b475e3f9c2a4244aceaa58c1ca3c932~mv2.jpg/v1/fill/w_469,h_288,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/82fcd3_0b475e3f9c2a4244aceaa58c1ca3c932~mv2.webp"
-        />
-        <ProfesionInfo
-          money="150"
-          hr="1 hr"
-          profesion="OPERATIONAL CONSULTING"
-          img="https://static.wixstatic.com/media/82fcd3_ee75c9f1b8e7451cbbf134f22529874e~mv2.jpg/v1/fill/w_469,h_288,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/82fcd3_ee75c9f1b8e7451cbbf134f22529874e~mv2.webp"
-        />
-        <ProfesionInfo
-          money="170"
-          hr="1 hr"
-          profesion="CORPORATE STRATEGY"
-          img="https://static.wixstatic.com/media/82fcd3_e66f8029559c412da564aead8063cd76~mv2.jpg/v1/fill/w_469,h_288,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/82fcd3_e66f8029559c412da564aead8063cd76~mv2.webp"
-        />
+        {
+          data.map(item => (
+            <ProfesionInfo
+              key={item.id}
+              money={item.money}
+              hr={item.hr}
+              profesion={item.profesion}
+              img={item.img}
+            />
+          ))
+        }
       </div>
     </div>
   );
 }
 
-export default ServicesWrapper;
+
+
+export default ServicesWrapper

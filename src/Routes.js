@@ -6,7 +6,7 @@ function Routes() {
     <div>
       <Switch>
         {NavigationItems.map((item) => (
-          <Route exact path={item.path} component={item.component} />
+          <Route exact key={item.path} path={item.path} component={item.component} />
         ))}
       </Switch>
     </div>

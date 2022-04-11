@@ -1,6 +1,7 @@
 import "./style.css"
 import Slider from "react-slick"
-
+import { useState, useEffect } from "react"
+import data from "./data"
 
 
 function Testimonials() {
@@ -12,43 +13,49 @@ function Testimonials() {
               slidesToShow: 1,
               slidesToScroll: 1
        };
+       const [scrollTitle, setScrollTitle] = useState("")
+       const [scrollText, setScrollText] = useState("")
+       const [scrollPosition, setScrollPosition] = useState(0)
+
+       const handleScroll = () => {
+              const position = window.pageYOffset
+              setScrollPosition(position)
+       };
+       useEffect(() => {
+              window.addEventListener('scroll', handleScroll, { passive: true })
+
+              return () => {
+                     window.removeEventListener('scroll', handleScroll);
+              }
+       }, [])
+
+       useEffect(() => {
+              if (scrollPosition >= 2300) {
+                     setScrollTitle("scroll-title")
+              }
+              if (scrollPosition >= 2400) {
+                     setScrollText("scroll-text")
+              }
+       }, [scrollPosition])
        return (
               <div className="testimonials">
-                     <p className="title">TESTIMONIALS</p>
+                     <p className={`${scrollTitle} title`}>TESTIMONIALS</p>
                      <Slider {...settings}>
-                            <div className="slider-wrapper">
-                                   <p className="text-1">
-                                          “I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”
-                                   </p>
-                                   <p className="text-2">
-                                          Project Manager
-                                   </p>
-                                   <p className="text-3">
-                                          Dora Bridges
-                                   </p>
-                            </div>
-                            <div className="slider-wrapper">
-                                   <p className="text-1">
-                                          “I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”
-                                   </p>
-                                   <p className="text-2">
-                                          Operations Manager
-                                   </p>
-                                   <p className="text-3">
-                                          Sima Patel
-                                   </p>
-                            </div>
-                            <div className="slider-wrapper">
-                                   <p className="text-1">
-                                          “I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”
-                                   </p>
-                                   <p className="text-2">
-                                          Markering Director
-                                   </p>
-                                   <p className="text-3">
-                                          Brad Stevens
-                                   </p>
-                            </div>
+                            {
+                                   data.map(item => (
+                                          <div className={`${scrollText} slider-wrapper`} key={item.id}>
+                                                 <p className="text-1">
+                                                        {item.text1}
+                                                 </p>
+                                                 <p className="text-2">
+                                                        {item.text2}
+                                                 </p>
+                                                 <p className="text-3">
+                                                        {item.text3}
+                                                 </p>
+                                          </div>
+                                   ))
+                            }
                      </Slider>
               </div>
        )

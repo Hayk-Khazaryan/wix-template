@@ -6,7 +6,7 @@
 }
 .footer p{
        color: #fff;
-       font-family: "avenir-lt-w01_35-light1475496";
+       font-family: 'Avenir Next Cyr Italic', sans-serif;
 }
 .footer .first-chiled{
        display: flex;
@@ -16,7 +16,7 @@
 .footer .title{
        margin-bottom: 20px;
        letter-spacing: 0.05em;
-       font-family: "avenir-lt-w01_35-light1475496";
+       font-family: 'Avenir Next Cyr Italic', sans-serif;
        font-size: 20px;
        text-decoration: none;
        color: #fff;
@@ -24,7 +24,7 @@
 .footer .text{
        text-decoration: none;
        color: #fff;
-       font-size: 16px;
+       font-size: 15px;
        line-height: 25px;
 }
 .footer .secound-chiled .text:hover{

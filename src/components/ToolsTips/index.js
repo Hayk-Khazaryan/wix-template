@@ -1,21 +1,24 @@
-import "./style.css";
-import SearchIcon from "@mui/icons-material/Search";
-import { useState } from "react";
-import Checkbox from "@mui/material/Checkbox";
-import StraightIcon from "@mui/icons-material/Straight";
-import Menu from "./Menu";
-import FileBlock from "../../shared/FileBlock";
+import "./style.css"
+import SearchIcon from "@mui/icons-material/Search"
+import { useEffect, useState } from "react"
+import Checkbox from "@mui/material/Checkbox"
+import StraightIcon from "@mui/icons-material/Straight"
+import Menu from "./Menu"
+import FileBlock from "../../shared/FileBlock"
 
 function ToolsTipsWrapper() {
-  const [isClick, setIsClick] = useState(false);
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
+  }, [])
+  const [isClick, setIsClick] = useState(false)
   const MakeInput = (isClick) => {
     if (!isClick) {
-      setIsClick(true);
+      setIsClick(true)
     } else {
-      setIsClick(false);
+      setIsClick(false)
     }
-  };
-  const label = { inputProps: { "aria-label": "Checkbox demo" } };
+  }
+  const label = { inputProps: { "aria-label": "Checkbox demo" } }
   return (
     <div className="toolsTipsWrapper">
       <p className="title">TOOLS & TIPS</p>
@@ -55,7 +58,7 @@ function ToolsTipsWrapper() {
       </div>
       <FileBlock />
     </div>
-  );
+  )
 }
 
-export default ToolsTipsWrapper;
+export default ToolsTipsWrapper

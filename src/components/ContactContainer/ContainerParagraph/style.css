@@ -3,3 +3,12 @@
        justify-content: center;
        margin-bottom: 70px;
 }
+.contanierParagraph .paragraph{
+       opacity: 0;
+}
+.contanierParagraph .scroll {
+       opacity: unset;
+       transition: opacity 2.5s ease;
+       /* animation-name: l;
+       animation-duration: 2.5s; todo */
+}
